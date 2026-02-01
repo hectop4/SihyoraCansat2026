@@ -21,6 +21,17 @@ cansat-project/
 - Analizar datos atmosféricos recolectados durante el vuelo
 - Documentar el proceso completo de desarrollo
 
+## Gestion de Proyecto (GitFlow)
+
+Este proyecto utiliza GitFlow como modelo de ramificación para gestionar el desarrollo. Las ramas principales son:
+
+- `main`: Contiene el código de producción estable.
+- `develop`: Rama de desarrollo donde se integran nuevas características.
+- `feature/`: Ramas para nuevas características específicas.
+- `release/`: Ramas para preparar nuevas versiones.
+- `hotfix/`: Ramas para correcciones urgentes en producción.
+- `fix/`: Ramas para correcciones menores y ajustes.
+
 ## Hardware
 
 El directorio `hardware/` contendrá:
