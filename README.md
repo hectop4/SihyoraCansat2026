@@ -41,14 +41,15 @@ El directorio `hardware/` contendrá:
 - Selección e integración de sensores
 - Diseños de estructura mecánica
 - Lista de materiales (BOM)
+- Firmware embebido para microcontrolador
+- Código de adquisición de datos de sensores
+- Protocolos de transmisión de telemetría
 
 ## Software
 
 El directorio `software/` contendrá:
 
-- Firmware embebido para microcontrolador
-- Código de adquisición de datos de sensores
-- Protocolos de transmisión de telemetría
+
 - Software receptor de estación terrena
 - Herramientas de procesamiento y visualización de datos
 
