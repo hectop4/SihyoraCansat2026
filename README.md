@@ -7,9 +7,28 @@ Este proyecto documenta el desarrollo de un CanSat (Satélite Enlatado) - para p
 ## Estructura del Proyecto
 
 ```
-cansat-project/
-├── hardware/          # Diseños de hardware, esquemáticos y archivos PCB
-├── software/          # Firmware, código de estación terrena y procesamiento de datos
+SihyoraCansat2026/
+├── Hardware/
+│   ├── firmware/
+│   │   ├── src/              # Código fuente oficial del firmware (.c)
+│   │   ├── include/          # Archivos de encabezado (.h)
+│   │   └── tests/            # Scripts de prueba del firmware
+│   ├── schematics/           # Esquemáticos electrónicos (KiCad, Eagle, etc.)
+│   ├── pcb/                  # Archivos de diseño de PCB
+│   ├── mechanical/           # Modelos 3D y diseños estructurales
+│   └── bom/                  # Lista de materiales (BOM)
+│
+├── Software/
+│   ├── ground_station/
+│   │   ├── src/              # Código oficial de la estación terrena
+│   │   └── tests/            # Pruebas de la estación terrena
+│   ├── data_processing/
+│   │   ├── src/              # Scripts de análisis y visualización de datos
+│   │   └── tests/            # Pruebas de procesamiento de datos
+│   └── utils/                # Módulos de utilidades compartidas
+│
+├── docs/                     # Documentación general del proyecto
+├── .gitignore
 └── README.md
 ```
 
@@ -34,24 +53,25 @@ Este proyecto utiliza GitFlow como modelo de ramificación para gestionar el des
 
 ## Hardware
 
-El directorio `hardware/` contendrá:
+El directorio `Hardware/` está organizado en:
 
-- Esquemáticos electrónicos
-- Diseños de PCB
-- Selección e integración de sensores
-- Diseños de estructura mecánica
-- Lista de materiales (BOM)
-- Firmware embebido para microcontrolador
-- Código de adquisición de datos de sensores
-- Protocolos de transmisión de telemetría
+- **firmware/src/**: Código fuente oficial del firmware embebido (C)
+- **firmware/include/**: Archivos de encabezado del firmware
+- **firmware/tests/**: Scripts de prueba para validar sensores, comunicación y funciones del firmware
+- **schematics/**: Esquemáticos electrónicos del circuito
+- **pcb/**: Diseños y archivos de PCB
+- **mechanical/**: Diseños de estructura mecánica y modelos 3D
+- **bom/**: Lista de materiales (BOM)
 
 ## Software
 
-El directorio `software/` contendrá:
+El directorio `Software/` está organizado en:
 
-
-- Software receptor de estación terrena
-- Herramientas de procesamiento y visualización de datos
+- **ground_station/src/**: Código oficial del software receptor de la estación terrena
+- **ground_station/tests/**: Pruebas y scripts experimentales de la estación terrena
+- **data_processing/src/**: Herramientas oficiales de procesamiento y visualización de datos
+- **data_processing/tests/**: Pruebas de análisis y procesamiento de datos
+- **utils/**: Módulos de utilidades compartidas entre componentes
 
 ## Estado de Desarrollo
 
